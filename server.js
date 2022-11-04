@@ -8,6 +8,7 @@ const port = process.env.PORT || 8080;
 corsProxy.createServer({
     originWhitelist: [
       'http://localhost',
+      'http://localhost:8100',
       'http://192.168.1.12:8100'
     ],
     requireHeader: ['origin', 'x-requested-with'],
